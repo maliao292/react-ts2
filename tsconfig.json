@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
+    "noImplicitAny": false, // 不需要显式声明any
+    "target": "es5", // 编译后js版本
+    "lib": [ // 库文件 
+      "dom",  // dom 
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": true, //  
     "skipLibCheck": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true, // 允许我们使用commonjs 的方式import 导入， import React from 'react'
+    // "esModuleInterop": false, // import * as React from 'react'
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,7 +20,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "plugins": [{
+      "name": "typescript-plugin-css-modules"
+    }]
   },
   "include": [
     "src"
