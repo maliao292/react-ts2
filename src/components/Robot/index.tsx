@@ -18,4 +18,4 @@ const Robot: React.FC<Robots> = (props) => {
   );
 };
 
-export default Robot
+export default Robot   
