@@ -6,5 +6,4 @@ const MyHook: React.FC<Props> = (props) => {
     const [count,setCount]  = useState<number>(1)
   return <div>{count}</div>;
 };
-
 export default MyHook;
